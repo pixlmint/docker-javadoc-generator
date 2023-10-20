@@ -8,6 +8,7 @@ services:
       context: .
     environment:
       JAVA_PACKAGE: ch.zhaw.team02.tictactoe
+      PROJECT_TITLE: "Bananashake TicTacToe"
     volumes:
       - /mnt/c/Users/chris/ZHAW/Code/team02-bananashake-projekt1-tic-tac-toe/src:/java
       - ./generated:/generated
