@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  javadoc_generator:
+    image: pixlmint/javadoc-generator
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      JAVA_PACKAGE: ch.zhaw.team02.tictactoe
+    volumes:
+      - /mnt/c/Users/chris/ZHAW/Code/team02-bananashake-projekt1-tic-tac-toe/src:/java
+      - ./generated:/generated
